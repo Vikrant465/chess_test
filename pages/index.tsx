@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import Nav from "../pages/navbar";
+
 import { HeroUIProvider } from "@heroui/react";
 import { Button, Input } from "@heroui/react";
 import { useState } from "react";
@@ -45,7 +45,6 @@ export default function Home() {
 
   return (
     <HeroUIProvider>
-      {/* <Nav /> */}
       <div className="flex flex-col items-center justify-center h-screen gap-4">
         <h1 className="text-4xl font-bold">Lichess Profile Search</h1>
         <Input
