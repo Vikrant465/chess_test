@@ -1,10 +1,7 @@
-
 import axios from "axios";
 
-
-const fetchLichessProfile = async (username) => {
+const fetchLichessProfile = async (username: string) => {
     try {
-       
         const url = `https://lichess.org/api/user/${username}`;
 
         // Make the GET request to the Lichess API
@@ -14,15 +11,12 @@ const fetchLichessProfile = async (username) => {
             },
         });
 
-        
         console.log('User Profile:', response.data);
         return response.data;
     } catch (error) {
-        console.error('Error fetching profile:', error.response ? error.response.data : error.message);
+        console.error('Error fetching profile:');
     }
 };
 
-
-const username = 'visugh'; 
-
+const username: string = 'visugh';
 fetchLichessProfile(username);

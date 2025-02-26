@@ -1,10 +1,12 @@
-import {Button} from "@nextui-org/react";
+import {Button} from "@heroui/react";
 
 export default function Home1(){
 
     return (
-    <Button color="primary">
-      Button
-    </Button>
+      <div className="flex flex-col items-center justify-center h-screen">
+        <Button color="primary">
+          Get The Data
+        </Button>
+      </div>  
     )
 }
